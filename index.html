@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil Accesible</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header role="banner">
+    <h1>Perfil de Laura</h1>
+    <nav role="navigation" aria-label="Menú principal">
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+      <h2 id="titulo-sobre-mi">Sobre mí</h2>
+      <p>Soy desarrolladora front-end apasionada por la accesibilidad web y la experiencia de usuario.</p>
+    </section>
+
+    <section id="habilidades" aria-labelledby="titulo-habilidades">
+      <h2 id="titulo-habilidades">Habilidades</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Accesibilidad Web (WCAG)</li>
+      </ul>
+    </section>
+
+    <section id="contacto" aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto">Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required aria-required="true" />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required aria-required="true"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Laura Dev</p>
+  </footer>
+</body>
+</html>
